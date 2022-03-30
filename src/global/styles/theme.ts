@@ -1,6 +1,6 @@
 export default{
     colors:{
-        background: '#C4C4C4',
+        background: '#F0F2F5',
         shape: '#383838',
 
         frase: '#FFFFFF',
