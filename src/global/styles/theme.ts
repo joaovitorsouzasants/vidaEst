@@ -1,15 +1,20 @@
 export default{
     colors:{
         background: '#F0F2F5',
-        shape: '#383838',
-
-        frase: '#FFFFFF',
+        fraseInicial: '#383838',
+        buttonText: '#FFFFFF',
         buttonLogin:'#6cc634',
 
-        listagem: '#000000',
+        listagem: '#FFFFFF',
+        entradaRec:'#E5E5E5',
+        text:'#000000',
+        data: '#C4C4C4'
 
-        income: '#44dd45',
-        expense: '#f15a25',
-
+    },
+    fonts: {
+        regular: 'Poppins_400Regular',
+        medium: 'Poppins_500Medium',
+        bold: 'Poppins_700Bold'
     }
+
 }
