@@ -11,8 +11,9 @@ export const Container = styled.View`
 `;
 export const Header = styled.View`
     width: 100%;
-    height: ${RFPercentage(39)}px;
+    height: ${RFPercentage(25)}px;
     background-color: ${({ theme}) => theme.colors.background};
+
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -53,3 +54,8 @@ export const Icon = styled(MaterialIcons)`
 color:${({ theme})=> theme.colors.buttonExit} ;
 font-size:  ${RFValue(30)}px;
 `;
+export const HighLightCards = styled.ScrollView.attrs({ 
+    horizontal : true,
+    showsHorizontalScrollIndicator : false,
+    contentContainerStyle:{height: 200}
+})``;

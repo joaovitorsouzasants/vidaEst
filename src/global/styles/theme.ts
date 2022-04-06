@@ -4,7 +4,8 @@ export default{
         fraseInicial: '#383838',
         buttonText: '#FFFFFF',
         buttonLogin:'#6cc634',
-        buttonExit:'red',
+        buttonExit:'#F91006',
+        iconInput: '#44DD46',
 
         listagem: '#FFFFFF',
         entradaRec:'#E5E5E5',
