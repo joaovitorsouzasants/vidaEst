@@ -14,11 +14,14 @@ export const  Title = styled.Text`
 text-align: center;
 font-size:  ${RFValue(20)}px;
 font-family: ${({theme})=>theme.fonts.regular};
+margin-top: ${RFValue(10)}px;
 `;
 export const   Icon = styled(MaterialIcons)`
 font-size:  ${RFValue(70)}px;
 color:${({ theme})=> theme.colors.iconInput} ;
-margin: auto;
+margin:auto;
+margin-top: ${RFValue(20)}px;
+margin-bottom: ${RFValue(20)}px;
 `;
 export const  Footer = styled.View`
 `;

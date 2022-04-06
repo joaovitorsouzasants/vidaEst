@@ -11,7 +11,7 @@ export const Container = styled.View`
 `;
 export const Header = styled.View`
     width: 100%;
-    height: ${RFPercentage(25)}px;
+    height: ${RFPercentage(23)}px;
     background-color: ${({ theme}) => theme.colors.background};
 
     flex-direction: row;
@@ -44,11 +44,13 @@ export const UserGreeting = styled.Text`
 color: ${({ theme})=> theme.colors.text};
 font-family: ${({})=>theme.fonts.regular};
 line-height: ${RFValue(24)}px;
+margin-top: 39px;
 `;
 export const UserName = styled.Text`
 color: ${({ theme})=> theme.colors.text};
 font-family: ${({})=>theme.fonts.bold};
 line-height: ${RFValue(24)}px;
+margin-bottom: 34px;
 `;
 export const Icon = styled(MaterialIcons)`
 color:${({ theme})=> theme.colors.buttonExit} ;
@@ -57,5 +59,5 @@ font-size:  ${RFValue(30)}px;
 export const HighLightCards = styled.ScrollView.attrs({ 
     horizontal : true,
     showsHorizontalScrollIndicator : false,
-    contentContainerStyle:{height: 200}
+    contentContainerStyle:{height: 250}
 })``;
