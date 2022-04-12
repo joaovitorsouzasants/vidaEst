@@ -17,7 +17,7 @@ font-family: ${({theme})=>theme.fonts.regular};
 margin-top: ${RFValue(10)}px;
 `;
 export const   Icon = styled(MaterialIcons)`
-font-size:  ${RFValue(70)}px;
+font-size:  ${RFValue(50)}px;
 color:${({ theme})=> theme.colors.iconInput} ;
 margin:auto;
 margin-top: ${RFValue(20)}px;
