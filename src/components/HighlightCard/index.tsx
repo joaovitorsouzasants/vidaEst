@@ -1,24 +1,44 @@
 import React from "react";
 import {
-    Container, Header, Title, Icon, Footer, LostTransaction, Amount,
+    Container, Header, Title, Icon, Footer, LostTransaction, Amount, Icontotal,
 } from "./styles";
 
-export function HighlightCard() {
+interface Props {
+    title: string;
+    amount: string;
+    lastTransaction: string;
+    type: 'income' | 'expense' | 'total';
+}
+export function HighlightCard({
+    title,
+    amount,
+    lastTransaction,
+    type
+}: Props) {
+    const icons = {
+        income: "input",
+        expense: "input",
+        total: "md-calculator-outline"
+    }
     return (
 
-            <Container >
-                <Header>
-                    <Title>
-                        Entrada
-                    </Title>
-                    <Icon name="input" />
-                </Header>
-                <Footer>
-                    <LostTransaction>Ultima movimentação: 09/03/2022</LostTransaction>
-                    <Amount> R$ 10.000,00</Amount>
-                </Footer>
+        <Container  type={type}>
+            <Header>
+                <Title>
+                    {title}
+                </Title>
+                {
+                    type === 'total' ?
+                        <Icontotal name={icons[type]} type={type}/> :
+                        <Icon name={icons[type]} type={type}/>
+                }
+            </Header>
+            <Footer>
+                <LostTransaction>{lastTransaction}</LostTransaction>
+                <Amount> {amount}</Amount>
+            </Footer>
 
-            </Container>
+        </Container>
 
     )
 }

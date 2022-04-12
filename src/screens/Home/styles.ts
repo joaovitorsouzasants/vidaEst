@@ -1,7 +1,7 @@
 
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import { MaterialIcons} from "@expo/vector-icons"
-
+import { getStatusBarHeight } from "react-native-iphone-x-helper";
 import styled from "styled-components/native";
 import theme from "../../global/styles/theme";
 
@@ -15,7 +15,7 @@ export const Header = styled.View`
     background-color: ${({ theme}) => theme.colors.background};
 
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 `;
 
@@ -23,6 +23,7 @@ export const Header = styled.View`
 export  const ContentWrapper = styled.View`
 width: 100%;
 padding: 0 23px;
+margin-top: ${getStatusBarHeight() + RFValue(28)}px;
 flex-direction: row;
 
 align-items: center;
