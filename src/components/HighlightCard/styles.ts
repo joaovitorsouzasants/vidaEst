@@ -8,11 +8,10 @@ interface TypeProps{
 
 export const  Container = styled.View<TypeProps>`
 background-color: ${({ theme, type}) => type === 'expense' ? theme.colors.backSaida: theme.colors.entradaRec};
-width: ${RFValue(350)}px;
+width: ${RFValue(390)}px;
 border-radius: 5px;
 `;
 export const  Header = styled.View`
-
 `;
 export const  Title = styled.Text`
 text-align: center;

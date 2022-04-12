@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { HighlightCard } from '../../components/HighlightCard';
-
-import { Container, Header, ContentWrapper, UserInfo, Photo, User, UserGreeting, UserName, Icon , HighLightCards} from './styles';
+import { TransactionCard } from '../../components/TransactionCard';
+import { Container, Header, ContentWrapper, UserInfo, Photo, User, UserGreeting, UserName, Icon, HighLightCards, Transactions, Title } from './styles';
 export function Home() {
   return (
     <Container>
@@ -20,26 +20,30 @@ export function Home() {
       </Header>
 
       <HighLightCards>
-        <HighlightCard 
-        title='Entrada'
-        amount='R$ 10.000,00'
-        lastTransaction='Ultima movimentação: 09/03/2022'
-      type='income'
-/>
-<HighlightCard 
-        title='Saída'
-        amount='R$ 8.000,00'
-        lastTransaction='Ultima movimentação: 09/03/2022'
-      type='expense'
-/>
-<HighlightCard 
-        title='Total'
-        amount='R$ 2.000,00'
-        lastTransaction='Ultima movimentação: 09/03/2022'
-      type='total'
-/>
-        </HighLightCards>
-      
+        <HighlightCard
+          title='Entrada'
+          amount='R$ 10.000,00'
+          lastTransaction='Ultima movimentação: 09/03/2022'
+          type='income'
+        />
+        <HighlightCard
+          title='Saída'
+          amount='R$ 8.000,00'
+          lastTransaction='Ultima movimentação: 09/03/2022'
+          type='expense'
+        />
+        <HighlightCard
+          title='Total'
+          amount='R$ 2.000,00'
+          lastTransaction='Ultima movimentação: 09/03/2022'
+          type='total'
+        />
+      </HighLightCards>
+      <Transactions>
+        <Title>Listagem</Title>
+
+        <TransactionCard/>
+      </Transactions>
     </Container>
   );
 }

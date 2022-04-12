@@ -6,8 +6,9 @@ import styled from "styled-components/native";
 import theme from "../../global/styles/theme";
 
 export const Container = styled.View`
-    flex: 1;
+
     background-color: ${({theme})=> theme.colors.background};
+    height:${RFValue(550)}px ;
 `;
 export const Header = styled.View`
     width: 100%;
@@ -62,3 +63,14 @@ export const HighLightCards = styled.ScrollView.attrs({
     showsHorizontalScrollIndicator : false,
     contentContainerStyle:{height: 300}
 })``;
+export const Transactions = styled.View`
+padding: 0 24px;
+margin-top: ${RFValue(84)}px;
+height: ${RFValue(100)}px;
+background-color: aliceblue;
+`;
+export const Title  = styled.Text`
+margin-top: ${RFValue(19)}px;
+font-family: ${({theme})=> theme.fonts.regular};
+
+`;
