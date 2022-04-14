@@ -11,6 +11,7 @@ export function Home() {
   const transactionData: DataListProps[] = [
     {
       id: '1',
+      type: 'income',
       title: 'Almoço no if',
       amount: 'R$ 200,00',
       categoria: {
@@ -21,6 +22,7 @@ export function Home() {
     },
     {
       id: '2',
+      type: 'expense',
       title: 'Transporte para Francisco Sá',
       amount: 'R$ 40,00',
       categoria: {
@@ -31,6 +33,7 @@ export function Home() {
     },
     {
       id: '3',
+      type: 'income',
       title: 'Transporte para Salinas',
       amount: 'R$ 50,00',
       categoria: {

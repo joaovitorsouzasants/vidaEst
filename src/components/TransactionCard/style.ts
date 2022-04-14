@@ -2,7 +2,9 @@ import styled from "styled-components/native";
 import {MaterialIcons} from "@expo/vector-icons"
 import { RFValue } from "react-native-responsive-fontsize";
 
-
+interface TransactionProps{
+    type: 'income' | 'expense';
+}
 
 export const Container = styled.View`
     background-color: ${({theme})=>theme.colors.listagem};
@@ -15,10 +17,11 @@ font-family: ${({theme})=>theme.fonts.regular};
 color: ${({theme})=>theme.colors.text};
 `;
 
-export const Amount = styled.Text`
+export const Amount = styled.Text<TransactionProps>`
 font-size: ${RFValue(20)}px;
 font-family: ${({theme})=>theme.fonts.regular};
-color: ${({theme})=>theme.colors.text};
+color: ${({ theme, type }) => 
+        type === 'income' ? theme.colors.iconInputEntrada : theme.colors.iconInputSaida};
 `; 
 
 export const Footer= styled.View`

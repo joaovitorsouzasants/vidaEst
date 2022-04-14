@@ -6,6 +6,7 @@ interface categoria{
     icon:string;
 }
 export interface TransactionCardProps{
+    type: 'income' | 'expense';
     title: string;
     amount: string;
     categoria: categoria;
@@ -19,7 +20,9 @@ export function TransactionCard({ data }:Props){
     return(
         <Container>
            <Descricao>{data.title}</Descricao>  
-           <Amount>{data.amount}</Amount>
+           <Amount type={data.type}>
+               {data.type==='expense' &&'- '}
+               {data.amount}</Amount>
            <Footer>
            <Categoria>
                <Icon name = {data.categoria.icon}/>

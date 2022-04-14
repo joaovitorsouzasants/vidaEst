@@ -80,5 +80,6 @@ font-size: ${RFValue(20)}px;
 `;
 export const TransactionList = styled(
     FlatList as new (props: FlatListProps<DataListProps>) => 
-        FlatList<DataListProps>
-)``;
+        FlatList<DataListProps>).attrs({
+            showsVerticalScrollIndicator: false
+        })``;
