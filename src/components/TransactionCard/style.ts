@@ -3,7 +3,7 @@ import {MaterialIcons} from "@expo/vector-icons"
 import { RFValue } from "react-native-responsive-fontsize";
 
 interface TransactionProps{
-    type: 'income' | 'expense';
+    type: 'income' | 'expense' ;
 }
 
 export const Container = styled.View`

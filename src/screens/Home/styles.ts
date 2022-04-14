@@ -9,7 +9,6 @@ import { FlatList, FlatListProps } from "react-native";
 import { DataListProps } from ".";
 
 export const Container = styled.View`
-
     background-color: ${({theme})=> theme.colors.background};
     flex: 1;
 `;
@@ -61,16 +60,15 @@ export const Icon = styled(MaterialIcons)`
 color:${({ theme})=> theme.colors.buttonExit} ;
 font-size:  ${RFValue(30)}px;
 `;
+export const Body = styled.View``;
+
 export const HighLightCards = styled.ScrollView.attrs({ 
     horizontal : true,
     showsHorizontalScrollIndicator : false,
-    contentContainerStyle:{height: 300}
 })``;
 export const Transactions = styled.View`
  flex: 1;
 padding: 0 24px;
-margin-top: ${RFValue(84)}px;
-
 `;
 export const Title  = styled.Text`
 margin-top: ${RFValue(19)}px;

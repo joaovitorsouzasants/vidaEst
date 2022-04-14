@@ -2,7 +2,7 @@
 import React from 'react';
 import { HighlightCard } from '../../components/HighlightCard';
 import { TransactionCard, TransactionCardProps } from '../../components/TransactionCard';
-import { Container, Header, ContentWrapper, UserInfo, Photo, User, UserGreeting, UserName, Icon, HighLightCards, Transactions, Title, TransactionList } from './styles';
+import { Container, Header, ContentWrapper, UserInfo, Photo, User, UserGreeting, UserName, Icon, Body, HighLightCards, Transactions, Title, TransactionList } from './styles';
 
 export interface DataListProps extends TransactionCardProps {
   id: string;
@@ -57,37 +57,39 @@ export function Home() {
           <Icon name="logout" />
         </ContentWrapper>
       </Header>
+      <Body>
 
-      <HighLightCards>
-        <HighlightCard
-          title='Entrada'
-          amount='R$ 10.000,00'
-          lastTransaction='Ultima movimentação: 09/03/2022'
-          type='income'
-        />
-        <HighlightCard
-          title='Saída'
-          amount='R$ 8.000,00'
-          lastTransaction='Ultima movimentação: 09/03/2022'
-          type='expense'
-        />
-        <HighlightCard
-          title='Total'
-          amount='R$ 2.000,00'
-          lastTransaction='Ultima movimentação: 09/03/2022'
-          type='total'
-        />
-      </HighLightCards>
+        <HighLightCards>
+          <HighlightCard
+            title='Entrada'
+            amount='R$ 10.000,00'
+            lastTransaction='Ultima movimentação: 09/03/2022'
+            type='income'
+          />
+          <HighlightCard
+            title='Saída'
+            amount='R$ 8.000,00'
+            lastTransaction='Ultima movimentação: 09/03/2022'
+            type='expense'
+          />
+          <HighlightCard
+            title='Total'
+            amount='R$ 2.000,00'
+            lastTransaction='Ultima movimentação: 09/03/2022'
+            type='total'
+          />
+        </HighLightCards>
+      </Body>
       <Transactions>
         <Title>Listagem</Title>
 
         <TransactionList
           data={transactionData}
-          keyExtractor={( item ) => item.id}
+          keyExtractor={(item) => item.id}
           renderItem={({ item }) =>
             <TransactionCard data={item} />
           }
-        />  
+        />
       </Transactions>
     </Container>
   );
