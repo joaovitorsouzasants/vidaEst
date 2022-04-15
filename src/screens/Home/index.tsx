@@ -11,11 +11,11 @@ export function Home() {
   const transactionData: DataListProps[] = [
     {
       id: '1',
-      type: 'income',
-      title: 'Almoço no if',
-      amount: 'R$ 200,00',
+      type: 'expense',
+      title: 'Almoço da semana',
+      amount: 'R$ 100,00',
       categoria: {
-        icon: 'input',
+        icon: 'fastfood',
         name: 'Alimentação'
       },
       data: '09/03/2022'
@@ -24,23 +24,23 @@ export function Home() {
       id: '2',
       type: 'expense',
       title: 'Transporte para Francisco Sá',
-      amount: 'R$ 40,00',
+      amount: 'R$ 54,00',
       categoria: {
-        icon: 'input',
+        icon: 'directions-bus',
         name: 'Transporte'
       },
-      data: '09/03/2022'
+      data: '21/03/2022'
     },
     {
       id: '3',
       type: 'income',
-      title: 'Transporte para Salinas',
-      amount: 'R$ 50,00',
+      title: 'Aluguel recebido',
+      amount: 'R$ 500,00',
       categoria: {
-        icon: 'input',
+        icon: 'home',
         name: 'Transporte'
       },
-      data: '09/03/2022'
+      data: '02/04/2022'
     },
   ]
   return (

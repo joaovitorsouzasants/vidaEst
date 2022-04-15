@@ -16,6 +16,7 @@ interface Props{
     data: TransactionCardProps;
 }
 export function TransactionCard({ data }:Props){
+  
     return(
         <Container>
            <Descricao>{data.title}</Descricao>  

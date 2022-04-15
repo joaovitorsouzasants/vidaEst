@@ -34,7 +34,7 @@ export const Categoria = styled.View`
 flex-direction: row;
 align-items: center;
 `;
-export const Icon = styled(MaterialIcons)`
+export const Icon = styled(MaterialIcons)<TransactionProps>`
 font-size: ${RFValue(20)}px;
 color: ${({theme})=>theme.colors.text};
 `;
