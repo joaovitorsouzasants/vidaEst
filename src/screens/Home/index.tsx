@@ -38,7 +38,7 @@ export function Home() {
       amount: 'R$ 500,00',
       categoria: {
         icon: 'home',
-        name: 'Transporte'
+        name: 'Aluguel'
       },
       data: '02/04/2022'
     },
